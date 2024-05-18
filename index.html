@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>basic crud</title>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center flex-col">
+        <a class="bg-indigo-400 hover:bg-indigo-500 text-white px-2 py-2 rounded mb-12" href="/views/createPerson.html">Add Person</a>
+        <table class="w-1/2 text-sm text-left rtl:text-right text-gray-500">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Fullname
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Email
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Age
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                        John Zhenlly Alvarez
+                    </th>
+                    <td class="px-6 py-4">
+                        test@gmail.com
+                    </td>
+                    <td class="px-6 py-4">
+                        18
+                    </td>
+                    <td class="px-6 py-4 flex gap-3">
+                        <div>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-2 rounded">Update</button>
+                        </div>
+                        <div>
+                            <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
